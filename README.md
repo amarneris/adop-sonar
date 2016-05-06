@@ -71,6 +71,14 @@ Support for older versions (down to 1.6) is provided on a best-effort basis.
 
 # User feedback
 
+## Upgrading from older versions of SonarQube (like the LTS 4.7) to SonarQube 5.3
+Moving to a new version of SonarQube, usually means a DB upgrade as well.
+Enforced authentication, which is turned on by default for this container, is currently breaking the db upgrade process from the web UI.
+
+The solution we found so far is to temporarily disable the enforced authentication by running the container with the following environment variable set:
+SONARQUBE_FORCE_AUTHENTICATION=false
+
+After the initial DB upgrade, the authentication enforcement can be turned back on again by rerruning the container without the environment variable.
 ## Documentation
 Documentation for this image is available in the [Sonar documentation page](http://docs.sonarqube.org/display/SONAR/Documentation).
 Additional documentaion can be found under the [`docker-library/docs` GitHub repo](https://github.com/docker-library/docs). Be sure to familiarize yourself with the [repository's `README.md` file](https://github.com/docker-library/docs/blob/master/README.md) before attempting a pull request.
