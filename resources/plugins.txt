@@ -3,3 +3,4 @@ http://downloads.sonarsource.com/plugins/org/codehaus/sonar-plugins/java/sonar-f
 https://sonarsource.bintray.com/Distribution/sonar-java-plugin/sonar-java-plugin-3.4.jar
 http://downloads.sonarsource.com/plugins/org/codehaus/sonar-plugins/sonar-ldap-plugin/1.4/sonar-ldap-plugin-1.4.jar
 http://downloads.sonarsource.com/plugins/org/codehaus/sonar-plugins/sonar-build-breaker-plugin/1.1/sonar-build-breaker-plugin-1.1.jar
+https://github.com/stevespringett/dependency-check-sonar-plugin/releases/download/sonar-dependency-check-1.0.3/sonar-dependency-check-plugin-1.0.3.jar
