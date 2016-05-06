@@ -1,6 +1,6 @@
 FROM sonarqube:5.5
 
-MAINTAINER Robert Northard, <robert.a.northard>
+MAINTAINER Andreas Marneris, <andreas.marneris>
 
 ENV SONARQUBE_PLUGINS_DIR=/opt/sonarqube/default/extensions/plugins \
     SONARQUBE_SERVER_BASE="http://localhost:9000" \
