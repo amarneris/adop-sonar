@@ -2,6 +2,15 @@
 
 - [`0.1.0`, `0.1.0` (*0.1.0/Dockerfile*)](https://github.com/Accenture/adop-sonar/blob/master/Dockerfile.md)
 
+# Forked to upgrade SonarQube to 5.3
+Upgrading SonarQube to version 5.3 from the LTS 4.7 currently used in adop-sonar.
+Other slight modifications include:
+ * removing the "sonar-scm-activity-plugin", which is no longer supported as of SonarQube v5
+ * Adding OWASP sonar-dependency-check-plugin
+  
+The current latest version of SonarQube v5.4 has removed support for context roots.
+They are apparently comming back in v5.5.
+
 # What is adop-sonar?
 
 adop-sonar is a wrapper for the sonarqube image. It has primarily been built to perform extended configuration.
